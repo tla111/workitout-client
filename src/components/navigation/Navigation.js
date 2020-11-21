@@ -11,10 +11,7 @@ const Navigation = () => {
         </Link>
       </li>
       <li className='listLinks'>
-        <Link
-          to='https://vigorous-noyce-c8c4bc.netlify.app/myProfile'
-          className='reactLinks'
-        >
+        <Link to='/myProfile' className='reactLinks'>
           My Profile
         </Link>
       </li>

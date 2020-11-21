@@ -13,7 +13,7 @@ function App() {
         <Route exact path='/'>
           <RegisterScreen />
         </Route>
-        <Route exact path='https://vigorous-noyce-c8c4bc.netlify.app/myProfile'>
+        <Route exact path='/myProfile'>
           <ProfileScreen />
         </Route>
       </Switch>

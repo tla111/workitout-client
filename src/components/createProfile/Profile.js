@@ -20,8 +20,7 @@ const Profile = () => {
       fitnessLevel: fitnessLevel,
     });
     setTimeout(() => {
-      window.location.href =
-        'https://vigorous-noyce-c8c4bc.netlify.app//myProfile';
+      window.location.href = '/myProfile';
     }, 250);
   };
 
