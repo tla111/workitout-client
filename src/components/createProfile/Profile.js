@@ -20,7 +20,7 @@ const Profile = () => {
       fitnessLevel: fitnessLevel,
     });
     setTimeout(() => {
-      window.location.href = '/myProfile';
+      window.location.href = 'https://work-it-out-2020.herokuapp.com/myProfile';
     }, 250);
   };
 

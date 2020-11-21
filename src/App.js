@@ -13,7 +13,7 @@ function App() {
         <Route exact path='/'>
           <RegisterScreen />
         </Route>
-        <Route exact path='/myProfile'>
+        <Route exact path='https://work-it-out-2020.herokuapp.com/myProfile'>
           <ProfileScreen />
         </Route>
       </Switch>

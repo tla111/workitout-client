@@ -11,7 +11,10 @@ const Navigation = () => {
         </Link>
       </li>
       <li className='listLinks'>
-        <Link to='/myProfile' className='reactLinks'>
+        <Link
+          to='https://work-it-out-2020.herokuapp.com/myProfile'
+          className='reactLinks'
+        >
           My Profile
         </Link>
       </li>
