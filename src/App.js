@@ -13,7 +13,7 @@ function App() {
         <Route exact path='/'>
           <RegisterScreen />
         </Route>
-        <Route exact path='https://work-it-out-2020.herokuapp.com/myProfile'>
+        <Route exact path='https://vigorous-noyce-c8c4bc.netlify.app/myProfile'>
           <ProfileScreen />
         </Route>
       </Switch>

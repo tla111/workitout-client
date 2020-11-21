@@ -12,7 +12,7 @@ const Navigation = () => {
       </li>
       <li className='listLinks'>
         <Link
-          to='https://work-it-out-2020.herokuapp.com/myProfile'
+          to='https://vigorous-noyce-c8c4bc.netlify.app/myProfile'
           className='reactLinks'
         >
           My Profile

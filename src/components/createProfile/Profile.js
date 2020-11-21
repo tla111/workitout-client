@@ -20,7 +20,8 @@ const Profile = () => {
       fitnessLevel: fitnessLevel,
     });
     setTimeout(() => {
-      window.location.href = 'https://work-it-out-2020.herokuapp.com/myProfile';
+      window.location.href =
+        'https://vigorous-noyce-c8c4bc.netlify.app//myProfile';
     }, 250);
   };
 
