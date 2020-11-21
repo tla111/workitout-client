@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
 import './profile.css';
 import axios from 'axios';
 
