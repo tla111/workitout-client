@@ -20,7 +20,8 @@ const Profile = () => {
       fitnessLevel: fitnessLevel,
     });
     setTimeout(() => {
-      window.location.href = '/myProfile';
+      // window.location.href = '/myProfile';
+      window.location.reload()
     }, 250);
   };
 
