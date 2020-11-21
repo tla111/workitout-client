@@ -1,0 +1,48 @@
+.bmi_container {
+  /* border: 1px solid black; */
+  height: 500px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boxes {
+  border: 1px solid black;
+  background-color: white;
+  height: 275px;
+  width: 275px;
+  margin: 10px;
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  background-color: greenyellow;
+  opacity: 0.9;
+}
+
+.bmiLevel_header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.boxes ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.boxes ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.bmiIcons {
+  color: blue;
+  margin-top: 40px;
+  transform: scale(3.5);
+}

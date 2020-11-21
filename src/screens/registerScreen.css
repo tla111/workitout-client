@@ -1,0 +1,44 @@
+.registerContainer {
+  background-color: black;
+  height: 100vh;
+}
+
+.register_title {
+  width: 100%;
+  font-size: 100px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  background: url(./images/lightning.gif);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 65px;
+  left: 350px;
+}
+
+.boxes_container {
+  /* border: 1px solid greenyellow; */
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.boxes_register {
+  margin-top: 130px;
+  border: 1px solid white;
+  height: 500px;
+  width: 100%;
+}
+
+.box_left {
+  background-image: url('./images/readyToWork.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.box_right {
+  display: flex;
+  justify-content: center;
+}

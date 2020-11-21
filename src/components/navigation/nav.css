@@ -1,0 +1,29 @@
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #222222;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.listLinks {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.reactLinks:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.reactLinks:active {
+  color: red;
+  text-decoration: none;
+}
+
+.reactLinks:hover {
+  color: white;
+  text-decoration: none;
+}
