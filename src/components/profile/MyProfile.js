@@ -11,25 +11,27 @@ const MyProfile = () => {
   const [newFitnessLevel, setNewFitnessLevel] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3001/readProfile').then((response) => {
-      if (response.data.length > 0) {
-        setProfile(response.data[0]);
-      } else {
-        setProfile({
-          fullName: 'Create Profile',
-          userName: 'Create Profile',
-          age: 0,
-          height: 0,
-          weight: 0,
-          fitnessLevel: 'Create Profile',
-          id: 100,
-        });
-      }
-    });
+    axios
+      .get('https://work-it-out-2020.herokuapp.com/readProfile')
+      .then((response) => {
+        if (response.data.length > 0) {
+          setProfile(response.data[0]);
+        } else {
+          setProfile({
+            fullName: 'Create Profile',
+            userName: 'Create Profile',
+            age: 0,
+            height: 0,
+            weight: 0,
+            fitnessLevel: 'Create Profile',
+            id: 100,
+          });
+        }
+      });
   }, []);
 
   const updateProfile = (id) => {
-    axios.put('http://localhost:3001/updateProfile', {
+    axios.put('https://work-it-out-2020.herokuapp.com/updateProfile', {
       id: id,
       newUsername: newUsername,
       newWeight: newWeight,
@@ -41,7 +43,7 @@ const MyProfile = () => {
   };
 
   const deleteProfile = (id) => {
-    axios.delete(`http://localhost:3001/deleteProfile/${id}`);
+    axios.delete(`https://work-it-out-2020.herokuapp.com/deleteProfile/${id}`);
     setTimeout(() => {
       window.location.reload();
     }, 250);

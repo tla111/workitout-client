@@ -7,13 +7,15 @@ const Todos = () => {
   const [todosList, setTodosList] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/readTodos').then((response) => {
-      setTodosList(response.data);
-    });
+    axios
+      .get('https://work-it-out-2020.herokuapp.com/readTodos')
+      .then((response) => {
+        setTodosList(response.data);
+      });
   }, []);
 
   const addTodo = () => {
-    axios.post('http://localhost:3001/addTodos', {
+    axios.post('https://work-it-out-2020.herokuapp.com/addTodos', {
       todos: todos,
     });
 
@@ -23,7 +25,7 @@ const Todos = () => {
   };
 
   const deleteTodo = (id) => {
-    axios.delete(`http://localhost:3001/deleteTodos/${id}`);
+    axios.delete(`https://work-it-out-2020.herokuapp.com/deleteTodos/${id}`);
     setTimeout(() => {
       window.location.reload();
     }, 250);

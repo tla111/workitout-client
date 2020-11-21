@@ -12,7 +12,7 @@ const Profile = () => {
   const [fitnessLevel, setFitnessLevel] = useState('');
 
   const createProfile = () => {
-    axios.post('http://localhost:3001/addProfile', {
+    axios.post('https://work-it-out-2020.herokuapp.com/addProfile', {
       fullName: fullName,
       userName: username,
       age: age,

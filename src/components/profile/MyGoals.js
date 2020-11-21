@@ -13,13 +13,15 @@ const MyGoals = () => {
   const [newGoal5, setNewGoal5] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3001/readGoals').then((response) => {
-      setGoals(response.data[0]);
-    });
+    axios
+      .get('https://work-it-out-2020.herokuapp.com/readGoals')
+      .then((response) => {
+        setGoals(response.data[0]);
+      });
   }, []);
 
   const updateGoals = (id) => {
-    axios.put('http://localhost:3001/updateGoals', {
+    axios.put('https://work-it-out-2020.herokuapp.com/updateGoals', {
       id: id,
       newGoal1: newGoal1,
       newGoal2: newGoal2,
@@ -33,7 +35,7 @@ const MyGoals = () => {
   };
 
   const deleteGoals = (id) => {
-    axios.delete(`http://localhost:3001/deleteGoals/${id}`);
+    axios.delete(`https://work-it-out-2020.herokuapp.com/deleteGoals/${id}`);
     setTimeout(() => {
       window.location.reload();
     }, 250);

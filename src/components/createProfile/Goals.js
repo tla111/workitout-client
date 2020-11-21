@@ -10,7 +10,7 @@ const Goals = () => {
   const [goal5, setGoal5] = useState('');
 
   const createGoals = () => {
-    axios.post('http://localhost:3001/addGoals', {
+    axios.post('https://work-it-out-2020.herokuapp.com/addGoals', {
       goal1: goal1,
       goal2: goal2,
       goal3: goal3,
