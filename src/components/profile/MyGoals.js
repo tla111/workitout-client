@@ -20,11 +20,11 @@ const MyGoals = () => {
           setGoals(response.data[0]);
         } else {
           setGoals({
-            newGoal1: 'Drink more water',
-            newGoal2: 'Eat 3 meals daily',
-            newGoal3: 'Swim 2x a week',
-            newGoal4: 'Run every morning',
-            newGoal5: 'Meditate every night',
+            goal1: 'Drink more water',
+            goal2: 'Eat 3 meals daily',
+            goal3: 'Swim 2x a week',
+            goal4: 'Run every morning',
+            goal5: 'Meditate every night',
           });
         }
       });
