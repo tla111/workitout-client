@@ -6,11 +6,11 @@ import manStare from './images/manStare.jpeg';
 
 const MyGoals = () => {
   const [goals, setGoals] = useState([]);
-  const [newGoal1, setNewGoal1] = useState('');
-  const [newGoal2, setNewGoal2] = useState('');
-  const [newGoal3, setNewGoal3] = useState('');
-  const [newGoal4, setNewGoal4] = useState('');
-  const [newGoal5, setNewGoal5] = useState('');
+  const [goal1, setGoal1] = useState('');
+  const [goal2, setGoal2] = useState('');
+  const [goal3, setGoal3] = useState('');
+  const [goal4, setGoal4] = useState('');
+  const [goal5, setGoal5] = useState('');
 
   useEffect(() => {
     axios
@@ -30,15 +30,15 @@ const MyGoals = () => {
       });
   }, []);
 
-  const updateGoals = (id) => {
-    axios.put('https://work-it-out-2020.herokuapp.com/updateGoals', {
-      id: id,
-      newGoal1: newGoal1,
-      newGoal2: newGoal2,
-      newGoal3: newGoal3,
-      newGoal4: newGoal4,
-      newGoal5: newGoal5,
+  const createGoals = () => {
+    axios.post('https://work-it-out-2020.herokuapp.com/addGoals', {
+      goal1: goal1,
+      goal2: goal2,
+      goal3: goal3,
+      goal4: goal4,
+      goal5: goal5,
     });
+
     setTimeout(() => {
       window.location.reload();
     }, 250);
@@ -97,46 +97,41 @@ const MyGoals = () => {
                 <small>*Fill out every input</small>
               </span>
               <div className='profileUpdate'>
+                <label>Goal 1</label>
                 <input
                   type='text'
-                  placeholder='New Goal'
-                  onChange={(e) => {
-                    setNewGoal1(e.target.value);
-                  }}
+                  placeholder='Drink more water'
+                  onChange={(e) => setGoal1(e.target.value)}
                 />
+                <label>Goal 2</label>
                 <input
                   type='text'
-                  placeholder='New Goal'
-                  onChange={(e) => {
-                    setNewGoal2(e.target.value);
-                  }}
+                  placeholder='Run every other day'
+                  onChange={(e) => setGoal2(e.target.value)}
                 />
+                <label>Goal 3</label>
                 <input
                   type='text'
-                  placeholder='New Goal'
-                  onChange={(e) => {
-                    setNewGoal3(e.target.value);
-                  }}
+                  placeholder='Swim twice a week'
+                  onChange={(e) => setGoal3(e.target.value)}
                 />
+                <label>Goal 4</label>
                 <input
                   type='text'
-                  placeholder='New Goal'
-                  onChange={(e) => {
-                    setNewGoal4(e.target.value);
-                  }}
+                  placeholder='Lift weights 3x a week'
+                  onChange={(e) => setGoal4(e.target.value)}
                 />
+                <label>Goal 5</label>
                 <input
                   type='text'
-                  placeholder='New Goal'
-                  onChange={(e) => {
-                    setNewGoal5(e.target.value);
-                  }}
+                  placeholder='Eat 5 meals a day'
+                  onChange={(e) => setGoal5(e.target.value)}
                 />
               </div>
               <a
                 href='#cardPage'
                 className='btn btn-blue updateButton'
-                onClick={() => updateGoals(goals._id)}
+                onClick={createGoals}
               >
                 Update Goals
               </a>
