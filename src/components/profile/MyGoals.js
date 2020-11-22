@@ -16,7 +16,17 @@ const MyGoals = () => {
     axios
       .get('https://work-it-out-2020.herokuapp.com/readGoals')
       .then((response) => {
-        setGoals(response.data[0]);
+        if (response.data.length > 0) {
+          setGoals(response.data[0]);
+        } else {
+          setGoals({
+            newGoal1: 'Drink more water',
+            newGoal2: 'Eat 3 meals daily',
+            newGoal3: 'Swim 2x a week',
+            newGoal4: 'Run every morning',
+            newGoal5: 'Meditate every night',
+          });
+        }
       });
   }, []);
 
