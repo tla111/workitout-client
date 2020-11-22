@@ -15,7 +15,7 @@ const Todos = () => {
         } else {
           setTodosList([
             {
-              todos: [...todos, 'Eat more', 'Drink more water'],
+              todos: ['Drink more water'],
             },
           ]);
         }
