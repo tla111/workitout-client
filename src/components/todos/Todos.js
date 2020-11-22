@@ -14,7 +14,7 @@ const Todos = () => {
           setTodosList(response.data);
         } else {
           setTodosList(["Get more sleep", "Drink more water"])
-      });
+      };
   }, []);
 
   const addTodo = () => {
