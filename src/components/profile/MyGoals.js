@@ -94,7 +94,7 @@ const MyGoals = () => {
             </a>
             <div className='popup_right_container'>
               <span className='small_text'>
-                <small>*Fill out every input</small>
+                <small>*Delete Goals First Then Post New Goals</small>
               </span>
               <div className='profileUpdate'>
                 <label>Goal 1</label>
@@ -133,7 +133,7 @@ const MyGoals = () => {
                 className='btn btn-blue updateButton'
                 onClick={createGoals}
               >
-                Update Goals
+                Post Goals
               </a>
               <a
                 href='#cardPage'
