@@ -10,7 +10,13 @@ const Todos = () => {
     axios
       .get('https://work-it-out-2020.herokuapp.com/readTodos')
       .then((response) => {
-        setTodosList(response.data);
+        if (response.data.length > 0) {
+          setTodosList(response.data);
+        } else {
+          setTodosList({
+            todos: 'Get More Sleep',
+          });
+        }
       });
   }, []);
 

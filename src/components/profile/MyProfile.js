@@ -24,7 +24,6 @@ const MyProfile = () => {
             height: 0,
             weight: 0,
             fitnessLevel: 'Create Profile',
-            id: 100,
           });
         }
       });
