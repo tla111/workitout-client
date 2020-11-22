@@ -94,7 +94,7 @@ const MyGoals = () => {
             </a>
             <div className='popup_right_container'>
               <span className='small_text'>
-                <small>*Delete Goals First Then Post New Goals</small>
+                <small>*Fill Out Every Input</small>
               </span>
               <div className='profileUpdate'>
                 <label>Goal 1</label>
