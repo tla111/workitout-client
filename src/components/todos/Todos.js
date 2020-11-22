@@ -13,10 +13,7 @@ const Todos = () => {
         if (response.data.length > 0) {
           setTodosList(response.data);
         } else {
-          setTodosList({
-            todos: 'Get More Sleep',
-          });
-        }
+          setTodosList(["Get more sleep", "Drink more water"])
       });
   }, []);
 
